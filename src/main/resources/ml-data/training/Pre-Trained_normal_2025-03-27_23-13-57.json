@@ -1,0 +1,51 @@
+{
+  "playerName": "Pre-Trained",
+  "label": "normal",
+  "timestamp": "2025-03-27_23-13-57",
+  "sessionDuration": 599.992,
+  "features": {
+    // basic metrics
+    "total_blocks_broken": 72.0,
+    "total_mining_time_seconds": 599.987,
+    "total_ores_mined": 23.0,
+    // ore counts
+    "ore_count_ancient_debris": 0.0,
+    "ore_count_copper_ore": 0.0,
+    "ore_count_deepslate_copper_ore": 0.0,
+    "ore_count_deepslate_diamond_ore": 23.0,
+    "ore_count_deepslate_emerald_ore": 0.0,
+    "ore_count_deepslate_gold_ore": 0.0,
+    "ore_count_deepslate_iron_ore": 0.0,
+    "ore_count_deepslate_lapis_ore": 0.0,
+    "ore_count_deepslate_redstone_ore": 0.0,
+    "ore_count_diamond_ore": 0.0,
+    "ore_count_emerald_ore": 0.0,
+    "ore_count_gold_ore": 0.0,
+    "ore_count_iron_ore": 0.0,
+    "ore_count_lapis_ore": 0.0,
+    "ore_count_nether_gold_ore": 0.0,
+    "ore_count_nether_quartz_ore": 0.0,
+    "ore_count_redstone_ore": 0.0,
+    // ore rates
+    "ore_rate_deepslate_diamond_ore_10min": 2.3,
+    "ore_rate_deepslate_diamond_ore_1min": 2.0,
+    "ore_rate_deepslate_diamond_ore_3min": 0.6666666666666666,
+    "ore_rate_deepslate_diamond_ore_5min": 1.8,
+    // other
+    "avg_ancient_debris_vein_size": 0.0,
+    "avg_diamond_vein_size": 2.875,
+    "avg_distance_between_diamonds": 21.519782434902,
+    "avg_distance_between_netherite": 0.0,
+    "avg_idle_time_seconds": 8.112661971830986,
+    "avg_time_at_same_y_level": 1.6130357142857141,
+    "avg_y_change_after_ore": 1.4317252054458078,
+    "avg_y_change_before_ore": 3.3538343952780094,
+    "avg_y_level_change": 1.4518342502061283,
+    "most_common_y_level": -17.0,
+    "percent_time_at_most_common_y": 7.358844990573843,
+    "y_level_changes_per_minute": 36.40078868375482,
+    "y_level_range": 0.0,
+    "y_level_std_dev": 13.906806623729487,
+    "y_level_variance": 193.39927046980634
+  }
+}

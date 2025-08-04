@@ -1,0 +1,110 @@
+debug:
+  enabled: false # Set to true to enable debug logging, false to disable
+
+# Auto-update settings
+check-for-updates: true
+notify-admins-on-join: true
+resource-id: 122967
+
+# Periodic update checking configuration
+periodic-update-checks:
+  # Whether to automatically check for updates periodically
+  enabled: true
+  # How often to check for updates (in hours)
+  interval-hours: 24
+
+# Auto-updates settings
+auto-updates:
+  # Whether to allow automatic updates when triggered by staff
+  enabled: true
+
+# Anti-Xray Plugin Configuration File
+
+decoy:
+  # Global switch for enabling/disabling the decoy system
+  enabled: true
+
+  # Number of natural ores a player can mine within the time window before a decoy is triggered
+  oreThreshold: 10
+
+  # Time window duration in ticks (1200 ticks = 1 minute)
+  timeWindowTicks: 3600
+
+  # Distance from the mined block where the decoy ore is placed
+  distance: 5.0
+
+  # Additional perpendicular offset to better hide the decoy block
+  fieldOffset: 0.5
+
+  # Only place decoys if the candidate location is fully surrounded by solid blocks
+  requireBuried: true
+
+  # Warn the player when they break a decoy ore
+  warnOnDecoy: false
+
+  # Delay (in ticks) before a decoy ore is reverted (1200 ticks = 60 seconds)
+  revertDelay: 1200
+
+  # Maximum allowed distance (in blocks) from the player for the decoy ore before it is reverted
+  maxDistance: 10.0
+
+  # Radius to search for a buried location
+  searchRadius: 10
+  # Buried Threshold (Number of solid adjacent blocks required for a location to be considered "buried")
+  buriedThreshold: 6
+
+
+staff:
+  # Enable alerts to staff for each natural ore mined by a player
+  oreAlerts: true
+
+  # Time (in ticks) after which the ore counter for a player resets (36000 ticks = 30 minutes)
+  oreResetTime: 36000
+
+  # Alert staff when a decoy ore is broken
+  alertEnabled: true
+
+ores:
+  natural:
+    - DIAMOND_ORE
+    - DEEPSLATE_DIAMOND_ORE
+    - GOLD_ORE
+    - DEEPSLATE_GOLD_ORE
+    - EMERALD_ORE
+    - DEEPSLATE_EMERALD_ORE
+
+
+punishment:
+  levels:
+    1: false
+    2: false
+    3: false
+    4: false
+    5: false
+    6: false
+
+# WARNING: DO NOT MODIFY ANY VALUES IN THIS SECTION UNLESS YOU FULLY UNDERSTAND THE CONSEQUENCES
+# NEVER CHANGE THE trainingSessionDuration AS ALL MACHINE LEARNING DATA IS CALIBRATED BASED ON THIS VALUE
+# CHANGING THESE VALUES MAY BREAK THE DETECTION SYSTEM OR CAUSE FALSE POSITIVES/NEGATIVES
+ml:
+  enabled: true
+  trainingSessionDuration: 600
+  detectionThreshold: 0.75
+  positionUpdateInterval: 5
+  autoAnalysis:
+    enabled: true
+    suspiciousThreshold: 15
+    maxPlayers: 5
+
+
+# Command hiding settings
+# When enabled, players without the "deepguardx.use" permission will see "Unknown command"
+# instead of "No permission" when attempting to use plugin commands
+# NOTE: Changes to this setting require a server restart to take effect!!!!
+command-hiding:
+  enabled: false  # Set to true to enable command hiding
+  messages:
+    error-line1: "§cUnknown or incomplete command, see below for error"
+    error-line2: "§c§n{command}§r§c§o<--[HERE]"
+    # You can use {command} to insert the command label
+    # Color codes are supported using § symbol

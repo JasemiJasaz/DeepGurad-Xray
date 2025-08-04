@@ -1,0 +1,75 @@
+name: DeepGuard-Xray
+version: '1.7.12'
+main: org.myplugin.deepGuardXray.deepGuardXray
+api-version: '1.20'
+depend: [ProtocolLib]
+softdepend: [Paper]
+description: A simple Anti-Xray plugin with ML detection. © 2025 Jasemi. All rights reserved.
+permissions:
+  # This is the CRITICAL permission needed for command hiding feature
+  # When command hiding is enabled, players MUST have this permission
+  # to use any DeepGuardX commands, otherwise they'll see "Unknown command" errors
+  deepguardx.use:
+    description: "Allows the user to see and use DeepGuard commands. IF Only command-hiding is true"
+    default: op
+  deepguardx.staff:
+    description: "Allows the user to receive anti-xray alerts."
+    default: op
+  deepguardx.teleport:
+    description: "Allows the user to teleport to decoy ore locations by clicking alerts."
+    default: op
+  deepguardx.togglealert:
+    description: "Allows the user to toggle the ore alert."
+    default: op
+  deepguardx.debug:
+    description: "Allows the user to Enable/Disable the debug alert."
+    default: op
+  deepguardx.gui:
+    description: Allows access to the AntiXray staff GUI.
+    default: op
+  deepguardx.highlight:
+    description: Allows highlighting of decoy ore veins
+    default: op
+  deepguardx.punish:
+    description: Allows direct management of punishment levels
+    default: op
+  deepguardx.modify:
+    description: Allows access to the AntiXray Modify  suspicious count.
+    default: op
+  deepguardx.ml:
+    description: Access to ML commands and analysis
+    default: op
+  deepguardx.autoupdate:
+    description: Allows access to Use the update commands.
+    default: op
+  deepguardx.gui_playerstats:
+    description: Allows access to the detailed player mining stats GUI.
+    default: op
+  deepguardx.gui_suspicious:
+    description: Allows access to the detailed suspicious player mining stats GUI.
+    default: op
+  deepguardx.gui_punishment:
+    description: Allows access to punishment configuration GUI
+    default: op
+  deepguardx.gui_oreconfig:
+    description: Allows access to oreconfig GUI
+    default: op
+  deepguardx.gui_ml:
+    description: Access to ML analysis GUI
+    default: op
+  deepguardx.gui_config:
+    description: Allows access to the plugin configuration GUI
+    default: op
+  deepguardx.gui_webhook:
+    description: Allows configuring Discord webhook settings
+    default: op
+  deepguardx.gui_Appeal:
+    description: Allows access to Appeal GUI
+    default: op
+
+
+commands:
+  deepguard:
+    description: Main AntiXray command with subcommands.
+    usage: /deepguard <subcommand>
+    aliases: [dgx]
