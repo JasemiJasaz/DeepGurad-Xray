@@ -4,7 +4,7 @@ main: org.myplugin.deepGuardXray.deepGuardXray
 api-version: '1.20'
 depend: [ProtocolLib]
 softdepend: [Paper]
-description: A simple Anti-Xray plugin with ML detection. © 2025 Jasemi. All rights reserved.
+description: A simple Anti-Xray plugin with ML detection. © 2025 Jasemi.
 permissions:
   # This is the CRITICAL permission needed for command hiding feature
   # When command hiding is enabled, players MUST have this permission
