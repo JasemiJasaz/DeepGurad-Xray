@@ -1,5 +1,7 @@
 # DeepGuard‑XRay
 
+plugin is not actively supported
+
 DeepGuard‑XRay is an advanced anti‑Xray plugin for Minecraft servers (Paper 1.21–1.21.4) featuring machine learning detection, staff GUI, Discord webhook integration, and command hiding functionality.
 
 ## Status
